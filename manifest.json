@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Quick-fil-A",
+    "version": "1.0",
+    "description": "Insert templates with custom shortcuts",
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentScript.js"],
+            "all_frames": true,
+            "match_about_blank": true,
+            "run_at": "document_end"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
