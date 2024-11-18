@@ -1,4 +1,4 @@
-# Template Inserter Chrome Extension
+# Quick-Fil-A Chrome Extension
 
 A Chrome extension that allows users to create, manage, and quickly insert customizable text templates using shortcuts.
 
